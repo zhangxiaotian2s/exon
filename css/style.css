@@ -18,7 +18,7 @@ img{border: 0;}
  * header
  */
 #header{ width: 1140px;position: fixed; left: 50%; margin-left:-570px;  _position:absolute; _top:expression(eval(document.documentElement.scrollTop));
- height: 78px;   top: 0px; background: #fff; z-index: 10000; 
+ height: 78px;   top: 0px; background: #fff; z-index: 1000;  box-shadow: 0px 2px 2px #999999; border-radius: 0px 0px 5px 5px;
 }
 #header #logo{ width: 30%; height: 78px; float: left;}
 #header #logo a{ display: block; margin: auto; width: 200px; height: 78px;  background:url(../images/logo.png) no-repeat 0 50%;}
@@ -49,7 +49,7 @@ filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
  */
 .park_wrap{ width: 1140px; margin:-40px auto 0px;  border-radius: 10px; overflow: hidden; z-index: 200; position: relative;}
 
-.park01{ width:100%; background:#FFFFFF; overflow: hidden;}
+.park01{ width:100%; background:#FFFFFF; overflow: hidden; box-shadow: 0px 2px 2px #E5E5E5;}
 .park01 .park01_one{ width: 29%; padding: 20px 2%; margin-bottom: 15px; float: left;}
 .park01 .park01_one .park01_one_img{ width: 70px; height: 70px; overflow: hidden; position: relative; margin: 10px auto; }
 .park01 .park01_one .park01_one_img img{ display: block; }
@@ -63,7 +63,7 @@ filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
  * park02
 */
 
-.park02,.park03,.park04{ width: 100%; padding: 40px 0px; background: #f3f3f3;}
+.park02,.park03,.park04{ width: 100%; padding: 40px 0px; background: #f3f3f3; box-shadow: 0px 2px 2px #E5E5E5; margin-top: 1px;}
 .park02  header h1,.park03 header h1,.park04  header h1{ font-size: 48px; text-align: center;  color: #777777; line-height: 72px;}
 .park02  header p,.park03 header p,.park04 header p{font-size: 18px; line-height: 30px; color: #999999; width: 65%; margin: 20px auto; text-align: center;}
 
@@ -117,7 +117,7 @@ filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
 /*
  *park05 
  */
-.park05{ background: #222222; padding:100px 0px 70px;overflow: hidden;}
+.park05{ background: #222222; padding:100px 0px 70px;overflow: hidden; height: 420px;}
 .park05_left{width:550px; padding: 0px 20px; overflow: hidden;  float: left; }
 .park05_left h1{ font-size: 36px; color: #FFFFFF;}
 .park05_left p{ line-height: 26px; font-size: 14px; color: #FFFFFF;}
@@ -125,7 +125,7 @@ filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
 .park05_left textarea{ width: 518px; height: 216px; padding-left: 5px; text-align: left; font-size: 16px; color: #999999;border-radius: 4px; border: none;  background: #111111;}
 .park05_left  .sub{ width: 152px; height: 42px; line-height: 42px; text-align: center; border: 0; background: #d9534f; color: #FFFFFF;  font-size: 18px;  border-radius: 6px; cursor: pointer;}
 
-.park05_right { float: left;width: 500px;}
+.park05_right { float: left;width: 500px; overflow: hidden;}
 .park05_right h1{font-size: 36px; color: #FFFFFF; }
 .park05_right  .address{ width: 250px; float: left; font-size: 14px; color: #999999; line-height: 24px;;}
 
@@ -143,14 +143,5 @@ filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
 /*
  * #popup_box
  */
-#popup_box{ width: 100%; padding-bottom: 40px; position: fixed; top: 80px; z-index: 10000; background:#52B6EC; }
-
-.popup_box{ width: 1140px; margin:0 auto; height: 100%; position: relative;}
-.popup_box .close{ display: block; height: 36px; font-size: 36px; color: #FFFFFF; position: absolute; right: 0px;}
-.popup_artical{overflow-y:scroll;  height:400px;}
-.popup_artical h1{ width: 100%; height: 120px; line-height:120px; text-align: center; }
-
-.popup_artical .popup_artical_contnet p{ font-size: 14px;  color: #FFFFFF; padding: 10px; line-height: 28px;  text-indent: 32px;}
-
 
 

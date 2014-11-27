@@ -9,6 +9,15 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 		<script type="text/javascript" src="js/scroll.js"></script>
+		
+		<!-- Add fancyBox main JS and CSS files -->
+	   <script type="text/javascript" src="fancyBox/jquery.fancybox.js"></script>
+	  <link rel="stylesheet" type="text/css" href="fancyBox/jquery.fancybox.css" media="screen" />
+ 
+	
+		
+		
+		
 		<!--[if lte IE 8]>
            <script src="js/html5.js"></script>
         <![endif]-->
@@ -16,7 +25,7 @@
 		<!--[if IE 6]>
 	    <script src="js/IE6PNG.js"></script>
         <script>
-        	DD_belatedPNG.fix(".ie6png,.park02_list_one_img a i,.park01_one_link,#logo a,#nav li i,.park02_list_one_img a,#park04_ul li div a");
+        	DD_belatedPNG.fix(".ie6png,.park02_list_one_img a i,.park01_one_link,#logo a,#nav li i,.park02_list_one_img a,#park04_ul li div a,.fancybox-overlay");
          </script>
        <![endif]-->
 
@@ -135,56 +144,56 @@
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着" class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着" class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着" class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着" class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着" class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着" class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着"  class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
 						<figure class="park02_list_one">
 							<div class="park02_list_one_img">
 								<img src="images/item2.jpg" width="100%" height="100%" alt="">
-								<a href="#" class="hover1s"><i></i></a>
+								<a href="images/item2.jpg" rel="group1" title="Lorem Ipsum悲哀Amet坐着" class="hover1s"><i></i></a>
 							</div>
 							<figcaption>Lorem Ipsum悲哀Amet坐着</figcaption>
 						</figure>
@@ -192,6 +201,17 @@
 
 					</div>
 				</section>
+				<!--图片弹出-->
+				<script>
+					$('.park02_list_one_img a').fancybox({
+						'titleShow':true
+						
+					})
+			
+					
+					
+				</script>
+				
 				<section class="park03">
 					<header>
 						<h1>看我们的定价</h1>
@@ -279,6 +299,26 @@
 						</div>
 					</div>
 				</section>
+				<!--带ifram弹出 做文章来用-->
+				<script>
+	  $(".park03_list_box").find("li>a").live("click", function(){ 
+          $.fancybox({ 
+                  'width'               : 670, 
+                  'padding'             : 0, 
+                  'centerOnScroll'      :  true  , 
+                  'autoScale'           :  false  , 
+                  'transitionIn'        :  'none'  , 
+                  'transitionOut'       :  'none'  , 
+                  'href'                :  'tpl_artical.html', 
+                  'type'                :  'iframe'  , 
+                  'hideOnOverlayClick'  :  false 
+          }); 
+		          return   false  ; 
+      }); 
+					
+					
+				</script>
+				
                 <section class="park04">
                 	<header>
                 		<h1>满足团队</h1>
@@ -423,7 +463,7 @@
                 			</li>
                 			<li>
                 				<div><img src="images/icon-social06.png">
-                					<a href="#"></a>
+                					<a href="#" ></a>
                 				</div>
                 				<a href="#">Facebook</a>
                 				
@@ -444,52 +484,21 @@
 			
 			<footer id="footer">
 				
-				<p>© 2013 ShapeBootstrap. All Rights Reserved.</p>
+				<p>© 2013 ShapeBootstrap. All Rights Reserved.<a class="fancybox" href="images/item2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" >点击弹出</a></p>
 				
 			</footer>
            
 
 		</div>
-		
-		<div  id="popup_box"> 
-			
-		<div class="popup_box">
-			<a class="close">×</a>
-		  	<div class="blank30"></div>
-		  	<div class="blank30"></div>
-			<div class="popup_artical">
-				<h1>高级副总裁高级副总裁高级副总裁</h1>
-				
-				<div class="popup_artical_contnet">
-					<p>高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁</p>
-						<p>高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁</p>
-						<p>高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁</p>
-						<p>高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总
-						裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁高级副总裁</p>
-					
-				</div>
-				
-				
-				
-			</div>
-			
-		</div>
-       	
-		</div>
-		
-		
+
 		
 
 
 		<script>
 			$(document).ready(function(e){
+				
+				
+				});
 				
 				$.fn.scrollfn({
 					type: 1,    
@@ -507,78 +516,10 @@
 	                rightbtn: ".par04_right",
 	                isAutomatic: 0
 				},"#park04_ul")
-		function navbkadd(i){
-			$("#nav>li").removeClass("current").eq(i).addClass("current");	
-			
-		}
-		function ckickgo(nodename){
-			
-		 $("html,body").animate({scrollTop:$(nodename).offset().top-70},1000)
-			
-		}
-				
-				
-		$(window).scroll(function(){		
-             var scrolltop=$(window).scrollTop()
-              if($("#banner").offset().top-scrolltop<10){
-              	navbkadd(0)
-              }
-              if($(".park01").offset().top-scrolltop<80){
-              	navbkadd(1)
-              	
-              }
-             if($(".park02").offset().top-scrolltop<80){
-             	navbkadd(2) 	
-             }
-               if($(".park03").offset().top-scrolltop<80){
-             	navbkadd(3) 	
-             }
-              if($(".park04").offset().top-scrolltop<80){
-             	navbkadd(4) 	
-             }
-               if($(".park05").offset().top-scrolltop<80){
-             	navbkadd(5) 	
-             }
-		   })
-			$("#nav>li").click( function(){
-				
-				var i=$(this).index()
-				var scrolltop=$(window).scrollTop()
-				switch (i){
-					case 0:
-					//alert(i)
-				  ckickgo("#banner")
-					break;
-					case 1:
-					ckickgo(".park01")
-					break;
-					case 2:
-					ckickgo(".park02")
-					break;
-					case 3:
-					ckickgo(".park03")
-					break;
-					case 4:
-					ckickgo(".park04")
-					break;
-					case 5:
-					ckickgo(".park05")
-					break;
-					
-				}
-				
-			})
-				$("#popup_box .close").click(function(){
-				
-					$("#popup_box").remove();
-					
-					
-					
-					
-				})
 			})
 		</script>
-
+		
+   <script type="text/javascript" src="js/scrollauto.js" ></script>
 	</body>
 
 </html>
