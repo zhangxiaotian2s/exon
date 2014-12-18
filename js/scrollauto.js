@@ -19,13 +19,13 @@ $(document).ready(function(e){
               	navbkadd(1)
               	
               }
-             if($(".park02").offset().top-scrolltop<80){
+             if($(".new_park02").offset().top-scrolltop<80){
              	navbkadd(2) 	
              }
-               if($(".park03").offset().top-scrolltop<80){
+               if($(".park_gg").offset().top-scrolltop<80){
              	navbkadd(3) 	
              }
-              if($(".park04").offset().top-scrolltop<80){
+              if($(".new_park04").offset().top-scrolltop<80){
              	navbkadd(4) 	
              }
                if($(".park05").offset().top-scrolltop<80){
