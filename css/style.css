@@ -145,6 +145,14 @@ filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; }
 .park03_list_third h2 a{ color: #353942;}
 .park03_list_third .more_list{ background:#353942 ;}
 
+
+/*
+ * new add park04s
+ */
+.new_add_park04{background: #5bacfd;}
+.new_add_park04 header{ text-align: center; line-height: 80px; color: #FFFFFF;} 
+
+
 /*
  * park04
 */
