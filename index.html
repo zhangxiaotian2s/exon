@@ -14,10 +14,6 @@
 		<script type="text/javascript" src="fancyBox/jquery.fancybox.js"></script>
 		<link rel="stylesheet" type="text/css" href="fancyBox/jquery.fancybox.css" media="screen" />
 
-
-
-
-
 		<!--[if lte IE 8]>
            <script src="js/html5.js"></script>
         <![endif]-->
@@ -43,19 +39,19 @@
 						<li class="current"><i class="icon-home"></i>
 						</li>
 						<li>服务
-						 <span>services</span>
+							<span>services</span>
 						</li>
 						<li>优势
-						<span>Portfolio</span>
+							<span>Portfolio</span>
 						</li>
 						<li>撰文
-						<span>Picing</span>
+							<span>Picing</span>
 						</li>
 						<li>关于我们
-						<span>About Us</span>
+							<span>About Us</span>
 						</li>
 						<li>联系我们
-						<span>Contact</span>
+							<span>Contact</span>
 						</li>
 
 					</ul>
@@ -204,10 +200,7 @@
 
 						</ul>
 
-
 					</div>
-
-
 
 					<div class="blank30"></div>
 
@@ -286,7 +279,6 @@
 
 					</div>
 				</section>-->
-
 
 				<section class="park03">
 					<header>
@@ -368,13 +360,35 @@
 						</div>
 					</div>
 				</section>
-            <section class="new_add_park04 ">
-            	<header>
+				<section class="new_add_park04 ">
+					<header>
 						<h1>校长简介 / Head teacher</h1>
 					</header>
-            </section>
+					<div class="left_image">
+						<img src="images/xz.jpg" width="270" height="379" class="hover1s" />
+						<p> 校长：李哲 Jessica Li</p>
+					</div>
+					<div class="right_mes">
+						  <p>> 现北京杰西卡国际教育校长
+							<br>> 前新东方讲师
+							<br />> 前樱知叶教育集团英语教学主管
+							<br />> 前北京赛达学校教学主管及模考中心主任
+							<br />> 前精英计划教学校长
+							<br />> 前新东方教师
+							<br />> 在澳自高中起留学并工作11年
+							<br />> Bachelor of Property Economics - University of Technology, Sydney悉尼科技大学（世界排名78位）房地产经济学士
+							<br />> Master of Applied Finance - University of Western Sydney 西悉尼大学金融硕士
+							<br />> 亲自面试和培训过各大机构教师
+							<br />> 曾培训过数十名托福各单项满分学员
+							<br />> 主讲课程：ESL，托福全科，雅思全科，SAT全科，SSAT全科等出国留学培训科目，教学经验8年，曾任SSAT美国官方推广协理，并主持，参加与筹划北京数十所重点学校的公益讲座。
+							<br />> 组织外教自创
+							< 对接桥梁课程体系> 该体系针对学生对接西方国家高中，大学，研究生的课程有极大的帮助，得到了解西方教育文化及背景的家长和学生的大力支持与信赖，更让很多准留学生受益匪浅。
 
-				
+						</p>
+					</div>
+
+				</section>
+
 				<section class="new_park04">
 					<header>
 						<h1><img src="images/gsjanje.jpg" alt="公司简介"></h1>
@@ -439,7 +453,6 @@
 							</li>
 
 						</ul>
-
 
 					</div>
 					<div class="blank30"></div>
@@ -533,16 +546,11 @@
 
 							</li>
 
-
-
 						</ul>
-
 
 					</div>
 					<div class="blank10"></div>
 				</section>
-
-
 
 			</div>
 
@@ -553,45 +561,44 @@
 
 			</footer>
 
-
 		</div>
 
 		<!--图片弹出-->
 		<script>
 			$('#footer a').fancybox({
-						'titleShow': true
-
-					})
+				'titleShow': true
+			})
 		</script>
 		<!--带ifram弹出 做文章来用-->
 		<script>
 			$(".park03_list_box").find("li>a").live("click", function() {
-						$.fancybox({
-							'width': 670,
-							'padding': 0,
-							'centerOnScroll': true,
-							'autoScale': false,
-							'transitionIn': 'none',
-							'transitionOut': 'none',
-							'href': 'tpl_artical.html',
-							'type': 'iframe',
-							'hideOnOverlayClick': false
-						});
-						return false;
-					});
+				$.fancybox({
+					'width': 670,
+					'padding': 0,
+					'centerOnScroll': true,
+					'autoScale': false,
+					'transitionIn': 'none',
+					'transitionOut': 'none',
+					'href': 'tpl_artical.html',
+					'type': 'iframe',
+					'hideOnOverlayClick': false
+				});
+				return false;
+			});
 		</script>
 
 		<script>
 			$(document).ready(function(e) {
-              $("#new_park04_content>ul>li").hover(function(){
-              	$(this).find(".li_top_box").stop(true,true)
-              	$(this).find(".li_top_box").animate({"top":0},500)
-              },function(){
-              	$(this).find(".li_top_box").animate({"top":174},500)
-              })
-
-
-
+				$("#new_park04_content>ul>li").hover(function() {
+					$(this).find(".li_top_box").stop(true, true)
+					$(this).find(".li_top_box").animate({
+						"top": 0
+					}, 500)
+				}, function() {
+					$(this).find(".li_top_box").animate({
+						"top": 174
+					}, 500)
+				})
 				$.fn.scrollfn({
 					type: 1,
 					OverTime: 100,
@@ -599,7 +606,6 @@
 					rightbtn: ".banner_right_btn",
 					isAutomatic: 1
 				}, "#bannerul")
-
 				$.fn.scrollfn({
 					type: 0,
 					OverTime: 1000,
